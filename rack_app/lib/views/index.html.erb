@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Page with Form</title>
+    <link rel="stylesheet" href="stylesheets/app.css"> <!-- Ensure this link is correct -->
+</head>
+<body>
+
+    <div class="container"> <!-- Use the container class from CSS -->
+        <h1>Welcome <%= greet_name %> to My Simple Page</h1>
+        <br>
+        
+        <form action="/change" method="post" style="margin-bottom: 20px;">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name">
+            <button type="submit">Submit</button>
+        </form>
+
+        <button class="secondary">Click Me</button>
+    </div>
+
+</body>
+</html>
